@@ -2,12 +2,15 @@ import React from 'react';
 import './css/main.css';
 import './css/nav.css';
 import MovieList from './components/MovieList';
+import {MovieProvider} from './context/MovieContext';
 
 function App() {
   return (
-    <div className="App">
-	  <MovieList />
-    </div>
+	  <MovieProvider>
+    	  	<div className="App">
+	  		<MovieList />
+    		</div>
+	  </MovieProvider>
   );
 }
 
