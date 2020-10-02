@@ -7,7 +7,7 @@ export const MovieProvider = (props) =>
 {
 	const [movieState, useMovies] = useState(moviesJSON);
 	return (
-		<MovieContext.Provider>
+		<MovieContext.Provider value={[movieState, useMovies]}>
 			{ props.children }
 		</MovieContext.Provider>
 	);

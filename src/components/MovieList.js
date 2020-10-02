@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import Movie from './Movie';
-import Nav from './Nav';
-import moviesJSON from './movies.json';
+
+import {MovieContext} from '../context/MovieContext';
+import {useContext} from 'react';
 
 const MovieList = () =>
 {
-	const [movieState, useMovies] = useState(moviesJSON);
+	const [movieState, useMovies] = useContext(MovieContext);
 	return(
 		<div className="movie-list">
-			<Nav />
 			{movieState.movies.map(movie => <Movie movie={movie}/>)}
 		</div>
 	);
