@@ -1,11 +1,9 @@
-nav.main-nav
+.movie-card
 {
-	background-color : rgb(61,71,120);
-}
-
-nav.main-nav li
-{
-	display : inline-block;
-	width : 50%;
 	text-align : center;
+	display : block;
+	margin : 50px 30vw;
+	padding : 2em 3em;
+	border : 5px solid black;
+	border-radius : 10px;
 }
