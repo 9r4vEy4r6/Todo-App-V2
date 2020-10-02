@@ -23,11 +23,17 @@ const AddMovie = () =>
 
 	return(
 		<form className="movie-form">
-			<label for="name">Name : </label>
-			<input name="name" type="text" onChange={updateName} /><br/>
-			<label for="price">Price : </label>
-			<input name="price" type="text" onChange={updatePrice} /><br />
-			<button> Submit </button>
+			<table>
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><input name="name" type="text" onChange={updateName} /></td>
+				</tr>
+				<tr>
+					<td><label for="price">Price</label></td>
+					<td><input name="price" type="text" onChange={updatePrice} /></td>
+				</tr>
+				<button> Submit </button>
+			</table>
 		</form>
 	);
 }
