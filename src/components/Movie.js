@@ -4,7 +4,8 @@ const Movie = (props) =>
 {
 	return (
 		<div className = "movie-card">
-			{props.name}
+			{props.movie.name}<br />
+			{props.movie.price}
 		</div>
 	);
 }
