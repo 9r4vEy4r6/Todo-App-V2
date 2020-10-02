@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import movies from './movies.json';
+import moviesJSON from './movies.json';
 
 const MovieList = () =>
 {
-	const arr = movies.movies.map(movie => <p>{movie.name}</p>);
+	const [movieState, useMovies] = useState(moviesJSON);
+	const arr = movieState.movies.map(movie => <p>{movie.name}</p>);
 	return(
 		[arr]
 	);
