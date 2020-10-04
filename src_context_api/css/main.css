@@ -1,0 +1,9 @@
+.movie-card
+{
+	text-align : center;
+	display : block;
+	margin : 50px 30vw;
+	padding : 2em 3em;
+	border : 5px solid black;
+	border-radius : 10px;
+}
