@@ -10,7 +10,7 @@ export const decrement = () => {
 	}
 }
 
-export const logToggle = () => {
+export const login = () => {
 	return {
 		type : 'SIGN_IN'
 	}
