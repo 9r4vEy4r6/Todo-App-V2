@@ -1,13 +1,11 @@
 import React, {useState} from 'react';
 
-import {MovieContext} from '../context/MovieContext';
 import {useContext} from 'react';
 
 const AddMovie = () =>
 {
 	const [name, setName] = useState('');
 	const [price, setPrice] = useState('');
-	const [movieState, setMovies] = useContext(MovieContext);
 
 	const updateName = event => {
 		setName(event.target.value);
@@ -21,9 +19,9 @@ const AddMovie = () =>
 		event.preventDefault();
 		setName('');
 		setPrice('');
-		setMovies( prevMovies =>{
-			return { movies : [...prevMovies.movies, {name : name, price: price}]}
-		});
+		// setMovies( prevMovies =>{
+		// 	return { movies : [...prevMovies.movies, {name : name, price: price}]}
+		// });
 	}
 
 	return(
