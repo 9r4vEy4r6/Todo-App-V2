@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Movie from './Movie';
 
-import {useContext} from 'react';
+import {useSelector} from 'react-redux';
 
 const MovieList = () =>
 {
+	const movieState = useSelector(state => state.movies);
 	return(
 		<div className="movie-list">
-			// {movieState.movies.map(movie => <Movie movie={movie}/>)}
+			{(movieState.length===0)?<h2>No movies in here!</h2>:movieState.map(movie => <Movie movie={movie}/>)}
 		</div>
 	);
 }
