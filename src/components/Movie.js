@@ -4,9 +4,9 @@ const Movie = (props) =>
 {
 	return (
 		<div className = "movie-card">
-			{props.movie.id}<br />
-			{props.movie.name}<br />
-			{props.movie.price}
+			<h2>{props.movie.id}</h2>
+			Name : {props.movie.name}<br />
+			Price : Rs. {props.movie.price}
 		</div>
 	);
 }

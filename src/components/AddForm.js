@@ -35,9 +35,21 @@ const AdderForm = (props) =>
 
 	return (
 		<div className = "form-block">
-				<input type="text" name="movie" value={name} onChange={changeHandlerName}/>
-				<input type="text" name="price" value={price} onChange={changeHandlerPrice}/>
-				<button onClick={submitForm}>Add Movie</button>
+			<table className="formTable">
+			<tbody>
+				<tr>
+					<td><label htmlFor="movie">Movie Name </label></td>
+					<td><input type="text" name="movie" value={name} onChange={changeHandlerName}/></td>
+				</tr>
+				<tr>
+					<td><label htmlFor="price">Movie Price </label></td>
+					<td><input type="text" name="price" value={price} onChange={changeHandlerPrice}/></td>
+				</tr>
+				<tr className="last-row">
+					<td><button onClick={submitForm}>Add Movie</button></td>
+				</tr>
+			</tbody>
+			</table>
 		</div>
 	);
 }
