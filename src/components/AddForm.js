@@ -2,11 +2,12 @@ import React, {useState} from 'react';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {movieAdd} from '../actions/movieAddDeleteAction';
+import {increment} from '../actions/counterAction';
 
 const AdderForm = (props) =>
 {
 	const dispatch = useDispatch();
-	const movies = useSelector(state => state.movies);
+	const counter = useSelector(state => state.counter);
 
 	const [name, setName] = useState("");
 	const [price, setPrice] = useState("");
@@ -24,10 +25,11 @@ const AdderForm = (props) =>
 	const submitForm = (e) =>
 	{
 		const newObj = {
-			id : movies.length+1,
+			id : counter,
 			name : name,
 			price : price
 		}
+		dispatch(increment());
 		dispatch(movieAdd(newObj));
 		setName("");
 		setPrice("");
