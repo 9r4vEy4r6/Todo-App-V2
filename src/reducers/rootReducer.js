@@ -1,9 +1,9 @@
-import movieAddDeleteReducer from './movieAddDeleteReducer';
+import todoAddDeleteReducer from './todoAddDeleteReducer';
 import counterReducer from './counterReducer';
 import {combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
-	movies : movieAddDeleteReducer,
+	todos : todoAddDeleteReducer,
 	counter : counterReducer
 })
 

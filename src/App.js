@@ -3,7 +3,7 @@ import './css/main.css';
 import './css/nav.css';
 
 import Nav from './components/Nav';
-import MovieList from './components/MovieList';
+import TodoList from './components/TodoList';
 import AdderForm from './components/AddForm';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 	  	<div>
 			<Nav />
 			<AdderForm />
-			<MovieList />
+			<TodoList />
 		</div>
   	);
 }

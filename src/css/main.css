@@ -1,4 +1,4 @@
-.movie-content
+.todo-content
 {
 	text-align : center;
 	display : block;
@@ -7,14 +7,14 @@
 	padding : 2em 3em;
 }
 
-.movie-list
+.todo-list
 {
 	display : flex;
 	flex-wrap : wrap;
 	justify-content : flex-center;
 }
 
-.movie-card
+.todo-card
 {
 	padding : 2em 4em;
 	flex : 0 1 24%;
