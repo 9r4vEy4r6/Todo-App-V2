@@ -5,6 +5,14 @@
 	border : 5px solid black;
 	border-radius : 10px;
 	padding : 2em 3em;
+	font-size : 20px;
+}
+
+.todo-content-expand
+{
+	font-size : 25px;
+	border : 8px solid black;
+	padding : 1.5em 2.5em;
 }
 
 .todo-list
