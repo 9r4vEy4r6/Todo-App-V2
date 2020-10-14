@@ -9,11 +9,13 @@ const Movie = (props) =>
 
 	return (
 		<div className = "movie-card">
-			<h2>UID : {props.movie.id}</h2>
-			Name : {props.movie.name}<br />
-			Price : Rs. {props.movie.price}
-			<br />
-			<button className="delete-button" onClick = {()=>dispatch(movieRemove(props.movie.id))}>Delete</button>
+			<div className="movie-content">
+				<span className="heading">Name : {props.movie.name}</span><br />
+				UID : {props.movie.id}<br />
+				Price : Rs. {props.movie.price}
+				<br />
+				<button className="delete-button" onClick = {()=>dispatch(movieRemove(props.movie.id))}>Delete</button>
+			</div>
 		</div>
 	);
 }
